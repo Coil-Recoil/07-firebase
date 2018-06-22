@@ -4,7 +4,7 @@ font-family: 'Erica One', cursive;
     }
 
     .container {
-        background: rgba(0, 0, 0, 0.479);
+        background: rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;
         background-size: cover;
         margin: auto;
@@ -24,7 +24,6 @@ font-family: 'Erica One', cursive;
         color: black;
         background-color: black;
         background: url("../images/Schoolhouse-Rock-Conjunction-Junction-video-2-750x513.jpg");
-        background-repeat:;
        background-size: cover;
        margin: auto;
        color: white;  
@@ -35,23 +34,17 @@ font-family: 'Erica One', cursive;
         background: url("../images/black-solid.jpg");
     }
 
-.panel-title {
+    .panel-title {
     font-family: 'Shrikhand', cursive;
-font-family: 'Erica One', cursive;
-}
-
-    }
-    
-    img {
-        width: 400px;
-        height: 400px;
+    font-family: 'Erica One', cursive;
     }
     
     .btn { 
       color: #ffffff; 
-      background-color: gray; 
+      background-color: rgb(255, 145, 0); 
       border-color: #FFFFFF; 
       font-size: 20px;
-      padding: 10px;
+      padding: 5px;
       margin-top: 10px;
+      font-family: 'Shrikhand';
     }
