@@ -22,55 +22,44 @@ var minutes = 0;
 // Click Function
 
 $('.btn').on('click', function () {
-	console.log("Submit Clicked")
-	var newName = $("#newName").val().trim();
-	var newDest = $("#newDestination").val().trim();
-	var newTime = $("#newTime").val().trim();
-	var newFreq = $("#newFreq").val().trim();
+	var addName = $("#addName").val().trim();
+	var addDest = $("#addDestination").val().trim();
+	var addTime = $("#addTime").val().trim();
+	var addFreq = $("#addFreq").val().trim();
 
 
-	newTime = moment(moment(newTime, "hh:mm A").subtract(1, "years"), "hh:mm").format("hh:mm A");
+	addTime = moment(moment(addTime, "hh:mm A").subtract(1, "years"), "hh:mm").format("hh:mm A");
 
 	dataRef.ref().push({
-		name: newName,
-		dest: newDest,
-		start: newTime,
-		freq: newFreq,
+		name: addName,
+		dest: addDest,
+		start: addTime,
+		freq: addFreq,
 	})
 
-
-	$("#newName").val("");
-	$("#newDestination").val("");
-	$("#newTime").val("");
-	$("#newFreq").val("");
+	$("#addName").val("");
+	$("#addDestination").val("");
+	$("#addTime").val("");
+	$("#addFreq").val("");
 
 	return false;
 });
 
 dataRef.ref().on("child_added", function (childSnapshot, prevChildKey) {
 
-
 	var name = childSnapshot.val().name;
 	var dest = childSnapshot.val().dest;
 	var start = childSnapshot.val().start;
 	var freq = childSnapshot.val().freq;
 
-
 	// Arrival Calculations
-	var timeDifference = moment().diff(moment(start, "hh:mm A"), 'm');
-	var timeRemaining = timeDifference % freq;
-	var timeMinsAway = freq - timeRemaining;
 
-
-	var timeNext = moment().add(timeMinsAway, 'm');
-
-
-
+	var timeDiff = moment().diff(moment(start, "hh:mm A"), 'm');
+	var timeNext = timeDiff % freq;
+	var timeAway = freq - timeNext;
+	var timeNext = moment().add(timeAway, 'm');
 	var next = moment(timeNext).format("hh:mm A");
-	console.log("Formatted minutes: " + next);
-	var away = timeMinsAway;
-	console.log("Minutes away: " + away);
-
+	var away = timeAway;
 
 	$("#trainresults").append(
 		"<tr><td>" + name +
@@ -79,8 +68,5 @@ dataRef.ref().on("child_added", function (childSnapshot, prevChildKey) {
 		"</td><td>" + next +
 		"</td><td>" + away +
 		"</td></tr>");
-
-}, function (errorObject) {
-	console.log(errorObject.code)
-
-}); 
+},
+); 
