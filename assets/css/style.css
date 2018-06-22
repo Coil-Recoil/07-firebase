@@ -20,31 +20,53 @@ font-family: 'Erica One', cursive;
     
     body {
         font-family: 'Roboto', sans-serif;
-        text-align: center;
-        color: black;
+        text-align: left;
         background-color: black;
         background: url("../images/Schoolhouse-Rock-Conjunction-Junction-video-2-750x513.jpg");
        background-size: cover;
        margin: auto;
        color: white;  
-
     }
 
     .panel {
-        background: url("../images/black-solid.jpg");
+        background: rgba(0, 0, 0, 0.637);
     }
 
     .panel-title {
-    font-family: 'Shrikhand', cursive;
-    font-family: 'Erica One', cursive;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: black 5px 5px 5px;
     }
     
     .btn { 
       color: #ffffff; 
-      background-color: rgb(255, 145, 0); 
+      background-color: rgb(255, 135, 0); 
       border-color: #FFFFFF; 
       font-size: 20px;
       padding: 5px;
       margin-top: 10px;
       font-family: 'Shrikhand';
+      text-shadow: 0.3em;
+    }
+
+
+    .panel-transparent {
+        background: none;
+    }
+    
+    .panel-transparent .panel-heading{
+        background: rgba(0, 0, 0, 0);
+        color:white;
+    }
+    
+    .panel-transparent .panel-body{
+        background: rgba(0, 0, 0, 0.637);
+    
+    }
+
+    .jumbotron img{
+        max-width:55%;
+        max-height:40%;
     }
