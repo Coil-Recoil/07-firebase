@@ -1,21 +1,45 @@
-  h1, .jumbotron {
-    font-family: 'Monofett', cursive;
+h1, .jumbotron {
+    font-family: 'Shrikhand', cursive;
+font-family: 'Erica One', cursive;
+    }
+
+    .container {
+        background: rgba(0, 0, 0, 0.479);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
     }
     
     .jumbotron {
-        /*background-image: url("../images/snowpiercer-train.jpg");*/
+        background: url("../images/");
         background-repeat: no-repeat;
        background-size: cover;
        margin: auto;
-       color: darkslategray;   
+       color: white;   
     }
     
     body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        color: white;
+        color: black;
         background-color: black;
-        background: url("../images/snowpiercer-outside-the-train1.jpg");
+        background: url("../images/Schoolhouse-Rock-Conjunction-Junction-video-2-750x513.jpg");
+        background-repeat:;
+       background-size: cover;
+       margin: auto;
+       color: white;  
+
+    }
+
+    .panel {
+        background: url("../images/black-solid.jpg");
+    }
+
+.panel-title {
+    font-family: 'Shrikhand', cursive;
+font-family: 'Erica One', cursive;
+}
+
     }
     
     img {
@@ -27,21 +51,7 @@
       color: #ffffff; 
       background-color: gray; 
       border-color: #FFFFFF; 
-      font-size: 30px;
-      padding: 15px;
-      margin-top: 15px;
-    }
-
-    
-.counters {
-    position: absolute;
-    left: 0;
-    top: 70%;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    background-color: black;
-    color: white;
-    background: rgba(0, 0, 0, 0.479);
-    border-color: 15px solid black;
+      font-size: 20px;
+      padding: 10px;
+      margin-top: 10px;
     }
