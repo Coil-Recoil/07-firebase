@@ -37,9 +37,8 @@ font-family: 'Erica One', cursive;
 
     .panel-title {
     text-align: center;
-    font-family: 'Muli', sans-serif;
-    font-weight: 900;
-    font-size: 24px;
+    font-family: 'Luckiest Guy';
+    font-size: 27px;
     text-shadow: black 5px 5px 5px;
     }
     
@@ -51,7 +50,7 @@ font-family: 'Erica One', cursive;
       padding: 5px;
       margin-top: 10px;
       font-family: 'Shrikhand';
-      text-shadow: 0.3em;
+      text-shadow: black 1px 1px 1px;
     }
 
 
@@ -66,10 +65,9 @@ font-family: 'Erica One', cursive;
     
     .panel-transparent .panel-body{
         background: rgba(0, 0, 0, 0.637);
-    
     }
 
     .jumbotron img{
-        max-width:55%;
-        max-height:40%;
+        max-width:65%;
+        max-height:50%;
     }
