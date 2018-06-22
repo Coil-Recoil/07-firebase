@@ -10,6 +10,7 @@ font-family: 'Erica One', cursive;
         margin: auto;
         min-width: 90%;
         min-height: 90%;
+        border-radius: 10px;
     }
     
     .jumbotron {
@@ -37,8 +38,8 @@ font-family: 'Erica One', cursive;
     .panel-title {
     text-align: center;
     font-family: 'Muli', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 24px;
     text-shadow: black 5px 5px 5px;
     }
     
