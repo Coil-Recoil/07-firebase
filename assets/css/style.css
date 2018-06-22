@@ -1,0 +1,47 @@
+  h1, .jumbotron {
+    font-family: 'Monofett', cursive;
+    }
+    
+    .jumbotron {
+        /*background-image: url("../images/snowpiercer-train.jpg");*/
+        background-repeat: no-repeat;
+       background-size: cover;
+       margin: auto;
+       color: darkslategray;   
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: white;
+        background-color: black;
+        background: url("../images/snowpiercer-outside-the-train1.jpg");
+    }
+    
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .btn { 
+      color: #ffffff; 
+      background-color: gray; 
+      border-color: #FFFFFF; 
+      font-size: 30px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
+    
+.counters {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    background: rgba(0, 0, 0, 0.479);
+    border-color: 15px solid black;
+    }
